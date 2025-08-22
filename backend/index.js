@@ -1,5 +1,6 @@
 // ESM
 import Fastify from 'fastify';
+import cors from '@fastify/cors';
 import routes from './src/routes/index.js';
 
 /**
@@ -8,6 +9,9 @@ import routes from './src/routes/index.js';
 const fastify = Fastify({
   logger: true
 });
+
+// Allow requests from all origins (only for demo and dev puropses)
+fastify.register(cors, { origin: true });
 
 fastify.register(routes);
 
