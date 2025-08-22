@@ -1,0 +1,30 @@
+[
+	{
+		"to": "buyer.prospect@acme-corp.com",
+		"cc": "sales.team@ourstartup.io",
+		"bcc": "crm.archive@ourstartup.io",
+		"subject": "Quick question about your Q4 lead gen goals",
+		"body": "Hi Jamie,\n\nI noticed Acme Corp has been hiring SDRs—usually a sign pipeline targets are climbing. Teams like Growthify and LeadBridge use our platform to shave 3–5 hours/week off manual prospect research while lifting reply rates ~18%.\n\nWould a 12‑minute screenshare tomorrow at 10:30am or 2:00pm work to show how we enrich and personalize first-touch emails automatically?\n\nBest,\nAlex\nSenior AE | OurStartup"
+	},
+	{
+		"to": "support@clientco.io",
+		"cc": "customer.success@ourstartup.io",
+		"bcc": "crm.archive@ourstartup.io",
+		"subject": "RE: Onboarding assistance for your new sales reps",
+		"body": "Hi Morgan,\n\nThanks for reaching out. I pulled the logs—your two new reps haven’t accepted their invitation links yet, so the dashboards show as blank. I’ve re-issued the invites and attached a 2‑minute loom walking through activation.\n\nNext steps:\n1. Have them click the fresh links (expire in 24h)\n2. Connect their Google Workspace mailboxes\n3. Import the starter prospect list (template attached)\n\nPing me once steps 1–2 are done and I can pre-load snippets for them.\n\nCheers,\nDana\nCustomer Success"
+	},
+	{
+		"to": "ops.director@retailnova.com",
+		"cc": "solutions@ourstartup.io",
+		"bcc": "crm.archive@ourstartup.io",
+		"subject": "Cost reduction: consolidating your outreach tooling",
+		"body": "Hi Priya,\n\nSaw in RetailNova’s 10-K that SG&A optimization is a 2025 priority. Several multi-location retailers (ShopHub, UrbanTrail) cut outbound tooling spend 27% by consolidating sequencing + intent enrichment into our single workflow.\n\nIf I outline a quick ROI model using your public headcount + average send volume, would that be helpful? Happy to send before asking for a meeting.\n\nLet me know—can turn it around today.\n\nRegards,\nMarco\nAccount Executive"
+	},
+	{
+		"to": "it-admin@northpeak.io",
+		"cc": "support@ourstartup.io",
+		"bcc": "crm.archive@ourstartup.io",
+		"subject": "Follow-up: SPF/DKIM alignment for improved deliverability",
+		"body": "Hi Taylor,\n\nFollowing our earlier ticket, your SPF record propagated, but DKIM is still missing the selector 'outbound1'. Without it, Gmail may soft fail some campaign bursts.\n\nRecord to add:\nHost/Name: outbound1._domainkey\nType: TXT\nValue: v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQE... (truncated)\nTTL: 3600\n\nOnce added, run our verifier (Settings > Deliverability) and you should see a green check. Reply here if you’d like us to monitor first send batch tomorrow.\n\nBest,\nRenee\nDeliverability Support"
+	}
+]
